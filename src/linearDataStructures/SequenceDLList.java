@@ -21,6 +21,11 @@ public class SequenceDLList {
 	
 	public class SequenceDLListException extends Exception {
 
+		/**
+		 * 
+		 */
+		private static final long serialVersionUID = 1L;
+
 		public SequenceDLListException() {
 			super();
 		}

@@ -9,7 +9,13 @@ import java.util.Vector;
  *
  * <dt>Description:
  * <dd>This class is an implementation of the Stack using a vector as the
- * underlying data structure.
+ * underlying data structure. Implementing the Stack with a vector rather than
+ * an array has the following implications:
+ * <ul>
+ * <li>The capacity is unlimited and overflow does not need to be checked</li>
+ * <li>Generics can be used</li>
+ * <li>You cannot store primitives (Autoboxing can be used in Java 5)</li>
+ * </ul>
  * </dl>
  * 
  * @author SamiStart
@@ -22,7 +28,7 @@ public class VectorStack extends Vector<Object> {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
+
 	int stackSize;
 
 	public VectorStack() {
